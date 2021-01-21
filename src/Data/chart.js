@@ -1,8 +1,9 @@
 const sharedOptions = {
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
   responsive: true,
   legend: {
-    display: false
+    display: true,
+    position: 'bottom',
   }
 };
 
@@ -53,8 +54,8 @@ const stackedGridOptions = {
 }
 
 const colors = [{
-  backgroundColor: '#7986cb',
-  borderColor: '#3f51b5',
+  backgroundColor: '#00abc0',
+  borderColor: '#eeeeee',
   pointBackgroundColor: '#3f51b5',
   pointBorderColor: '#fff'
 }, {
@@ -69,21 +70,16 @@ const colors = [{
   pointBorderColor: '#fff'
 }];
 
-const labels = ['1', '2', '3', '4', '5', '6', '7'];
+const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Seb', 'Oct', 'Nov', 'Dec'];
 
 const datasets = [{
-  label: 'My First dataset',
+  label: 'Usage',
   ...colors[0],
   borderWidth: 0,
-  data: [6, 5, 8, 8, 5, 5, 4]
-},
-{
-  label: 'My Second dataset',
-  ...colors[1],
-  borderWidth: 0,
-  data: [5, 4, 4, 2, 6, 2, 5]
-}
-];
+  data: [100, 60, 90, 30, 25, 90, 110, 35, 120, 40, 50, 90]
+}]
+
+
 
 const data = {
   labels,
@@ -174,9 +170,13 @@ const dataMixed = {
 };
 
 const options = {
+  maintainAspectRatio: true,
   responsive: true,
   tooltips: {
     mode: 'label'
+  },
+  legend: {
+    display: false,
   },
   elements: {
     line: {
@@ -187,7 +187,7 @@ const options = {
     xAxes: [{
       display: true,
       gridLines: {
-        display: false
+        display: false,
       },
       labels,
     }],
@@ -205,7 +205,7 @@ const options = {
     },
     {
       type: 'linear',
-      display: true,
+      display: false,
       position: 'right',
       id: 'y-axis-2',
       gridLines: {

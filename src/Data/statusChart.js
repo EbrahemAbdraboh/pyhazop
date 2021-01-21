@@ -1,6 +1,7 @@
 import {
   dataPie,
-  sharedOptions,
+  height,
+  sharedOptions
 
 } from './chart';
 
@@ -10,7 +11,7 @@ const statusChart = {
     title: 'Projects Status',
     subtitle: 'Pie',
     data: dataPie,
-    height: 200,
+    height,
     options: {
       ...sharedOptions,
       elements: {

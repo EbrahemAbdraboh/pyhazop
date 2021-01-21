@@ -1,7 +1,7 @@
 import {
   data,
+  height,
   gridOptions,
-  sharedOptions,
   options
 
 } from './chart';
@@ -11,12 +11,11 @@ const usageChart = {
     title: 'Users Usage',
     subtitle: 'Basic',
     data,
-    height: 200,
+    height,
     options: {
       ...options,
-      ...sharedOptions,
-      ...gridOptions
+      ...gridOptions,
     }
-  };
+  }
 
 export default usageChart;

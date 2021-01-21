@@ -72,7 +72,7 @@ class Home extends React.Component{
           </Grid>
           <Grid item xs={12}>
           </Grid>
-          <Grid item xs={12} sm={9}>
+          <Grid item xs={12} sm={4}>
             <Card>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -86,7 +86,7 @@ class Home extends React.Component{
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={4}>
             <Card>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -100,7 +100,7 @@ class Home extends React.Component{
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} >
+          <Grid item xs={12} sm={4}>
             <Card>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">

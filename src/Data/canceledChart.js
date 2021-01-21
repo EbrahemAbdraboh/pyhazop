@@ -1,6 +1,6 @@
 import {
   data,
-  sharedOptions,
+  height,
   gridOptions,
   options
 
@@ -12,10 +12,9 @@ const canceledChart = {
     title: 'Users Canceled',
     subtitle: 'Basic',
     data,
-    height: 200,
+    height,
     options: {
       ...options,
-      ...sharedOptions,
       ...gridOptions,
     }
   }
