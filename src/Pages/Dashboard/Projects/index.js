@@ -1,4 +1,8 @@
 import React from 'react';
+import { PageHeader, Wrapper, ProjectCard } from '../../../Components';
+
+// material UI
+import Grid from "@material-ui/core/Grid";
 
 
 
@@ -11,7 +15,20 @@ class Projects extends React.Component{
   }
   render(){
     return(
-      <h1>Projects</h1>
+      <Wrapper>
+        <Grid container spacing={1}>
+          <PageHeader title='Projects 120'/>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+
+        </Grid>
+      </Wrapper>
     );
   }
 }

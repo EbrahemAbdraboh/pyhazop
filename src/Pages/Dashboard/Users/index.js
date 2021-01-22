@@ -1,5 +1,5 @@
 import React from 'react';
-import { UsersHeader, UsersTable, Wrapper } from '../../../Components';
+import { PageHeader, UsersTable, Wrapper, AddUser } from '../../../Components';
 
 // material UI
 import Grid from "@material-ui/core/Grid";
@@ -17,7 +17,9 @@ class Users extends React.Component{
     return(
       <Wrapper>
         <Grid container spacing={1}>
-          <UsersHeader />
+          <PageHeader title='Users 50'>
+            <AddUser />
+          </PageHeader>
           <UsersTable />
 
         </Grid>

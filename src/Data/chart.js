@@ -277,7 +277,7 @@ const dataDoughnut = {
 const dataPie = {
   labels: ['Completed', 'UnCompleted'],
   datasets: [{
-    data: [90, 30],
+    data: [100, 15],
     backgroundColor: ['#00abc0', '#eeeeee']
   }]
 };

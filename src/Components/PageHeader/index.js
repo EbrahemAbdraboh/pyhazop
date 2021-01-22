@@ -1,5 +1,5 @@
 import React from 'react';
-import {AddUser} from '../';
+
 
 // material UI
 import Grid from "@material-ui/core/Grid";
@@ -7,19 +7,19 @@ import Typography from '@material-ui/core/Typography';
 
 
 
-const UsersHeader = props => {
+const PageHeader = props => {
   return(
     <React.Fragment>
       <Grid item xs={6}>
         <Typography variant="h4" gutterBottom>
-          Users {50}
+          {props.title}
         </Typography>
       </Grid>
       <Grid item xs={6} >
-        <AddUser />
+        {props.children}
       </Grid>
     </React.Fragment>
   );
 };
 
-export default UsersHeader;
+export default PageHeader;

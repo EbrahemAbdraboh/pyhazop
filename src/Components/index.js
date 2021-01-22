@@ -6,9 +6,10 @@ import GeneratePassword from "./GeneratePassword";
 import EditProfile from "./EditProfile";
 import StatisticCard from "./StatisticCard";
 import Wrapper from "./Wrapper";
-import UsersHeader from "./UsersHeader";
+import PageHeader from "./PageHeader";
 import UsersTable from "./UsersTable";
 import AddUser from "./AddUser";
+import ProjectCard from "./ProjectCard";
 
 
 
@@ -16,5 +17,5 @@ import AddUser from "./AddUser";
 
 export{
   Header, Sidebar, GeneratePassword, EditProfile, StatisticCard, Wrapper,
-  UsersHeader, UsersTable, AddUser
+  PageHeader, UsersTable, AddUser, ProjectCard
 }

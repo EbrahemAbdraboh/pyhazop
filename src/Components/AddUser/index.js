@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import GenPassword from '../GeneratePassword';
-
+import classNames from "classnames";
 // Edit Profile  button
 import AddIcon from '@material-ui/icons/Add';
 import Button from '@material-ui/core/Button';
@@ -28,10 +28,10 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
   },
-  button:{
-    color: '#eeeeee',
-
+  customButton: {
+    color: '#eeeeee'
   }
+
 }));
 
 const AddUser = props => {
@@ -53,7 +53,7 @@ const AddUser = props => {
   return (
     <div className={classes.root}>
       <Button
-        className={classes.button}
+        className={classNames(classes.button, classes.customButton)}
         onClick={handleClickOpen}
         startIcon={<AddIcon />}
         variant="contained"
